@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /**
+     * es6允许按照一定模式从数组和对象中提取值，对变量进行赋值，被称为解构赋值
+     */
+
+        //1.数组解构赋值
+    const f4 = ['宋小宝', '刘能', '赵四', '小沈阳']
+    const [songxiaobao, liuneng, zhaosi, xiaoshenyang] = f4
+    console.log(songxiaobao, liuneng, zhaosi, xiaoshenyang)
+
+    console.log('--------------------------------')
+    //2.对象解构
+    const zhao = {
+        name: '赵本山',
+        age: '不详',
+        xiaopin: () => {
+            console.log('我可以演小品！')
+        }
+    }
+    // 取值
+    const {name, age, xiaopin} = zhao
+    console.log(name)
+    console.log(age)
+    xiaopin()
+    // 重置属性
+    const {name: userName, age: ageNumber, xiaopin: ability} = zhao
+    //取值对象 将name修改成重新命名成userName  项目中有经验的大哥，习惯将字段统一命名规范方式，因人而异
+    console.log(userName)
+    console.log(ageNumber)
+    ability()
+</script>
+</body>
+</html>
