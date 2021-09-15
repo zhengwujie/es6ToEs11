@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    /**
+     * let声明
+     * 1.不能重复定义
+     * 2.块级作用域
+     * 3.不存在变量提升
+     * 4.不影响作用域链
+     */
+
+     //4.不影响作用域链
+    let aa = '航三'
+    function fn() {
+        console.log('aa', aa)
+    }
+
+    fn() //输出 aa 航三
+
+</script>
+</body>
+</html>
